@@ -32,6 +32,6 @@ form.addEventListener('submit', (e) => {
     message_error.innerHTML = "Message is required";
   } else {
     message_error.innerHTML = "";
-  }
+  }         
 
 });
