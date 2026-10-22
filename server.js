@@ -20,15 +20,15 @@ const server = http.createServer((req, res) => {
     if (err) {
       res.writeHead(404, { "Content-Type": "text/plain" });
       return res.end("404 - Not Found");
- }
+ }    
 
     res.writeHead(200, { "Content-Type": mime.getType(filePath) });
     res.end(data);
   });
-});
+}); 
 
 server.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});   
+  console.log(`Server running on  http://localhost:${PORT}`);
+});    
 
 
